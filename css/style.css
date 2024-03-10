@@ -315,3 +315,56 @@ img {
 .navbar .icons a i:hover {
   color: #40b884;
 }
+/* mobole-menu */
+.mobile-menu {
+  position: relative;
+  width: 220px;
+  max-width: calc(100% - 45px);
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-in-out;
+  display: none;
+}
+.close-btn {
+  position: absolute;
+  background-color: #111;
+  display: inline-block;
+  padding: 10px 15px;
+  top: 40px;
+  right: -40px;
+}
+.close-btn a i {
+  color: #fff;
+}
+.mobile-menu.active {
+  transform: translateX(-115%);
+}
+.mobnav {
+  font-size: 13px;
+  height: calc(100% - 36px);
+  padding-bottom: 10px;
+  overflow: auto;
+}
+.mobnav li {
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+.mobnav li a {
+  text-transform: uppercase;
+  color: #111;
+  text-decoration: none;
+  display: block;
+  padding: 15px 10px 15px 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+}
+.mobnav li:hover a {
+  color: #40b884;
+}
