@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Hamburgar</title>
+    <!-- icons -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- media -->
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <section class="navbar">
+      <div class="container">
+        <div class="row">
+          <div class="w-12 d-flex items-center">
+            <div class="w-2 d-xxl-none d-xl-none d-l-none d-m-flex">
+              <div class="hamburgar d-flex justify-start" id="open">
+                <span>MENU</span>
+              </div>
+              <ul class="ham-menu">
+                <div class="hamburgar d-flex justify-center" id="close">
+                  <span>Close</span>
+                </div>
+                <li>
+                  <a href="javascript:void(0)">Home</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">About</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Services</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Blogs</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Contacts</a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-10 d-m-none">
+              <ul class="d-flex nav justify-center">
+                <li class="dropdown">
+                  <a href="javascript:void(0)">Home</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">About</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Services</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Blog</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#open").click(function () {
+          $(".ham-menu").show("slow");
+        });
+        $("#close").click(function () {
+          $(".ham-menu").hide("slow");
+        });
+      });
+    </script>
+  </body>
+</html>
