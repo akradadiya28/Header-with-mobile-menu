@@ -322,8 +322,8 @@ img {
   max-width: calc(100% - 45px);
   height: 100%;
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
   z-index: 999;
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -337,12 +337,10 @@ img {
   padding: 10px 15px;
   top: 40px;
   right: -40px;
+  transition: all 0.5s;
 }
 .close-btn a i {
   color: #fff;
-}
-.mobile-menu.active {
-  transform: translateX(-115%);
 }
 .mobnav {
   font-size: 13px;
